@@ -1,4 +1,4 @@
-# react-native-liquid-glass 🧊
+# react-native-liquid-view 🧊
 
 A sleek, modern React Native component that brings Apple's revolutionary **iOS 26 Liquid Glass** design language to your mobile apps. Create stunning frosted-glass (glassmorphism) overlays with translucent materials that reflect and refract their surroundings, delivering a new level of vitality and focus to your content.
 
@@ -15,7 +15,7 @@ Inspired by [Apple's iOS 26 announcement](https://www.apple.com/newsroom/2025/06
 ## 🚀 Installation
 
 ```sh
-npm install react-native-liquid-glass
+npm install react-native-liquid-view
 ```
 
 ## 📱 Usage
@@ -25,7 +25,7 @@ npm install react-native-liquid-glass
 ```tsx
 import React from 'react';
 import { Text, ImageBackground } from 'react-native';
-import { LiquidGlassView } from 'react-native-liquid-glass';
+import { LiquidGlassView } from 'react-native-liquid-view';
 
 export default function App() {
   return (
@@ -58,7 +58,7 @@ export default function App() {
 ### Using Predefined Presets
 
 ```tsx
-import { LiquidGlassView, LiquidGlassPresets } from 'react-native-liquid-glass';
+import { LiquidGlassView, LiquidGlassPresets } from 'react-native-liquid-view';
 
 // Subtle glass effect
 <LiquidGlassView {...LiquidGlassPresets.subtle}>

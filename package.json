@@ -1,5 +1,5 @@
 {
-  "name": "react-native-liquid-glass",
+  "name": "react-native-liquid-view",
   "version": "0.1.0",
   "description": "A sleek, modern React Native component that brings Apple's iOS 26 Liquid Glass design language to your mobile apps",
   "main": "./lib/module/index.js",
@@ -54,14 +54,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vincent-presh/react-native-liquid-glass.git"
+    "url": "git+https://github.com/Vincent-presh/react-native-liquid-view.git"
   },
   "author": "Vincent precious <5tcentunary@gmail.com> (https://github.com/Vincent-presh)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Vincent-presh/react-native-liquid-glass/issues"
+    "url": "https://github.com/Vincent-presh/react-native-liquid-view/issues"
   },
-  "homepage": "https://github.com/Vincent-presh/react-native-liquid-glass#readme",
+  "homepage": "https://github.com/Vincent-presh/react-native-liquid-view#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
