@@ -63,7 +63,8 @@
   },
   "homepage": "https://github.com/Vincent-presh/react-native-liquid-view#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^19.6.0",
