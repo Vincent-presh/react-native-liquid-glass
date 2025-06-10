@@ -150,5 +150,8 @@
     "languages": "js",
     "type": "library",
     "version": "0.50.3"
+  },
+  "dependencies": {
+    "@testing-library/react-native": "^13.2.0"
   }
 }

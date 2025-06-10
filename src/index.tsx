@@ -1,3 +1,5 @@
-export function multiply(a: number, b: number): number {
-  return a * b;
-}
+export {
+  LiquidGlassView,
+  LiquidGlassPresets,
+  type LiquidGlassViewProps,
+} from './LiquidGlassView';
