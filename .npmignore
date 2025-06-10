@@ -1,18 +1,17 @@
 # Development files
 example/
 .github/
-.yarn/
 node_modules/
 
 # Configuration files
 .nvmrc
 .watchmanconfig
-.yarnrc.yml
 lefthook.yml
 babel.config.js
 eslint.config.mjs
 tsconfig.json
 tsconfig.build.json
+.npmrc
 
 # Git files
 .git/
@@ -47,5 +46,5 @@ coverage/
 android/build/
 ios/build/
 *.log
-yarn-error.log
-npm-debug.log* 
+npm-debug.log*
+package-lock.json 

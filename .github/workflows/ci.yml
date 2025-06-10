@@ -18,10 +18,10 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Lint files
-        run: yarn lint
+        run: npm run lint
 
       - name: Typecheck files
-        run: yarn typecheck
+        run: npm run typecheck
 
   build-library:
     runs-on: ubuntu-latest
@@ -33,7 +33,7 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Build package
-        run: yarn prepare
+        run: npm run prepare
 
   build-example:
     runs-on: ubuntu-latest
@@ -47,4 +47,4 @@ jobs:
       - name: Build example app
         run: |
           cd example
-          yarn build || echo "Build step not available, skipping..."
+          npm run build || echo "Build step not available, skipping..."

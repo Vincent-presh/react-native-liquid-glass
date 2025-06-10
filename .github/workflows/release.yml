@@ -30,7 +30,7 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Build package
-        run: yarn prepare
+        run: npm run prepare
 
       - name: Configure Git
         run: |
@@ -39,6 +39,6 @@ jobs:
 
       - name: Create Release
         run: |
-          yarn release ${{ github.event.inputs.version }}
+          npm run release ${{ github.event.inputs.version }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
