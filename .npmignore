@@ -1,0 +1,51 @@
+# Development files
+example/
+.github/
+.yarn/
+node_modules/
+
+# Configuration files
+.nvmrc
+.watchmanconfig
+.yarnrc.yml
+lefthook.yml
+babel.config.js
+eslint.config.mjs
+tsconfig.json
+tsconfig.build.json
+
+# Git files
+.git/
+.gitignore
+.gitattributes
+
+# Documentation (keep README.md)
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Tests and coverage
+**/__tests__/
+**/__mocks__/
+**/__fixtures__/
+coverage/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Build artifacts that shouldn't be published
+android/build/
+ios/build/
+*.log
+yarn-error.log
+npm-debug.log* 
