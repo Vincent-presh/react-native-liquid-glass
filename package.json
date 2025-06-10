@@ -143,5 +143,8 @@
     "languages": "js",
     "type": "library",
     "version": "0.50.3"
+  },
+  "dependencies": {
+    "@eslint/compat": "^1.2.9"
   }
 }
