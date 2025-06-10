@@ -1,44 +1,36 @@
-name: Release
+name: Release and Publish
 
 on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'Version type (patch, minor, major)'
+        description: 'Version type (e.g., patch, minor, major, pre-release)'
         required: true
         default: 'patch'
-        type: choice
-        options:
-          - patch
-          - minor
-          - major
 
 jobs:
   release:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
-      pull-requests: write
+      contents: write # to create release tags and commit version updates
+      id-token: write # to publish to npm with provenance
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # A personal access token is required to allow `release-it` to trigger other workflows
+          token: ${{ secrets.PAT }}
 
       - name: Setup
         uses: ./.github/actions/setup
-
-      - name: Build package
-        run: npm run prepare
 
       - name: Configure Git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Create Release
-        run: |
-          npm run release ${{ github.event.inputs.version }}
+      - name: Run Release and Publish
+        run: npm run release -- ${{ github.event.inputs.version }} --ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
