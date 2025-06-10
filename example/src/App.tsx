@@ -5,11 +5,8 @@ import {
   ImageBackground,
   ScrollView,
   StatusBar,
-  Dimensions,
 } from 'react-native';
 import { LiquidGlassView, LiquidGlassPresets } from 'react-native-liquid-view';
-
-const { width } = Dimensions.get('window');
 
 // Sample background image - you can replace with any beautiful background
 const backgroundImage = {
