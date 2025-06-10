@@ -67,13 +67,12 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^19.6.0",
-    "@eslint/eslintrc": "^3.3.0",
-    "@eslint/js": "^8.57.0",
-    "@evilmartians/lefthook": "^1.5.0",
     "@react-native/babel-preset": "0.78.2",
     "@react-native/eslint-config": "^0.78.0",
     "@release-it/conventional-changelog": "^9.0.2",
     "@types/react": "^19.0.12",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
     "commitlint": "^19.6.1",
     "del-cli": "^5.1.0",
     "eslint": "^8.57.0",
@@ -84,7 +83,7 @@
     "react-native": "0.79.3",
     "react-native-builder-bob": "^0.40.8",
     "release-it": "^17.10.0",
-    "typescript": "^5.8.3"
+    "typescript": "~5.5.0"
   },
   "peerDependencies": {
     "react": "*",
@@ -143,8 +142,5 @@
     "languages": "js",
     "type": "library",
     "version": "0.50.3"
-  },
-  "dependencies": {
-    "@eslint/compat": "^1.2.9"
   }
 }
